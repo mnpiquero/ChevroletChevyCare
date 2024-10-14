@@ -1,0 +1,212 @@
+/* Estilos generales */
+body {
+    background-color: #e0e0e0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 80px; /* Para evitar que el contenido se superponga con el header */
+}
+
+/* Header anclado */
+header {
+    background-color: #2c2438;
+    color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 100%; /* Ancho completo */
+    position: fixed; /* Fija el header */
+    top: 0; /* Se coloca en la parte superior de la página */
+    left: 0;
+    z-index: 1000; /* Asegura que esté siempre encima de otros elementos */
+}
+
+/* Ajustes del logo, título y navegación */
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap; /* Para que no se rompa en pantallas pequeñas */
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.navBar h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: white;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+/* Hover general */
+.menu li a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+/* Estilo para el botón activo */
+.menu li a.active {
+    background-color: #ffc107; /* Color destacado para el botón activo */
+    color: #2c2438; /* Cambia el color del texto */
+    border-radius: 5px;
+    cursor: default; /* Cambia el cursor a no clicable */
+}
+
+/* Desactivar el hover en el botón activo */
+.menu li a.active:hover {
+    background-color: #ffc107; /* Mantiene el color del botón activo */
+    color: #2c2438;
+}
+
+/* Imagen centrada */
+.avances-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Paleta de Colores */
+.color-palette {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 10px;
+    flex-wrap: wrap; /* Para que sea responsive */
+}
+
+.color {
+    height: 150px;
+    width: 150px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 1rem;
+    border: black solid 3px;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+}
+#color1 {
+    background-color: #2c2438;
+}
+
+#color2 {
+    background-color: #dddddd;
+}
+
+#color3 {
+    background-color: #000000;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navBar {
+        flex-direction: column; /* Cambiar a vertical en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column; /* El menú será vertical */
+        align-items: center;
+    }
+
+    .menu li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        width: 80px; /* Reducir tamaño del logo */
+    }
+
+    .navBar h1 {
+        font-size: 1.5rem; /* Reducir tamaño del texto */
+    }
+}
+
+@media (max-width: 480px) {
+    .menu li a {
+        padding: 8px 15px; /* Reducir el padding de los enlaces */
+    }
+
+    .navBar h1 {
+        font-size: 1.2rem; /* Ajustar el título aún más en pantallas muy pequeñas */
+    }
+
+    .color {
+        height: 100px;
+        width: 100px; /* Reducir tamaño de los colores en pantallas pequeñas */
+        font-size: 20px;
+    }
+}
+
+/* Recuadro para los objetivos */
+.objectives-box {
+    border: 2px solid #2c2438;  /* Borde del recuadro */
+    background-color: #f9f9f9;  /* Color de fondo del recuadro */
+    padding: 20px;  /* Espacio interno del recuadro */
+    max-width: 600px;  /* Ancho máximo del recuadro */
+    margin: 20px auto;  /* Centrará el recuadro horizontalmente */
+    text-align: center;  /* Centrar el texto dentro del recuadro */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor del recuadro */
+    border-radius: 10px;  /* Bordes redondeados */
+    font-size: 16px;  /* Tamaño de letra */
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #2c2438; /* Mismo color que el header */
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Ajusta el padding arriba y abajo, sin márgenes laterales */
+    width: 100%;
+    box-sizing: border-box; /* Para asegurar que no haya desbordamientos */
+    position: relative; /* Footer no anclado */
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    margin: 0; /* Sin margen */
+    font-size: 14px; /* Ajuste de tamaño de texto para una línea */
+}
