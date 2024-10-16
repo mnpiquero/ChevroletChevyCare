@@ -4,20 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chevrolet Chevy Care - Avances del Proyecto</title>
-    <link rel="stylesheet" href="estilos/avances.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/burger.css" />
+    <link rel="icon" type="image/png" href="img/logo.jpg">
 </head>
 <body>
     <header>
         <div class="navBar">
-            <img class="logo" src="./img/logo.jpg" alt="logo.jpg" />
-            <h1>Chevrolet Chevy Care</h1>
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="servicios.html">Integrantes</a></li>
-                <li><a href="nosotros.html">Proyecto</a></li>
-                <li><a href="avances.html" class="active">Avances</a></li>
-                <li><a href="contacto.html">Consejos</a></li>
-            </ul>
+            <div class="menu">
+                <img class="logo" src="./img/logo.jpg" alt="logo.jpg" />
+                <h1>Chevrolet Chevy Care</h1>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Integrantes</a></li>
+                    <li><a href="nosotros.html">Proyecto</a></li>
+                    <li><a href="avances.html" class="active">Avances</a></li>
+                    <li><a href="contacto.html">Consejos</a></li>
+                </ul>
+            </div>
+            <div class="burger-menu">
+                <div class="burger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="nav">
+                    <ul class="menu">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Integrantes</a></li>
+                        <li><a href="nosotros.html">Proyecto</a></li>
+                        <li><a href="avances.html" class="active">Avances</a></li>
+                        <li><a href="contacto.html">Consejos</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     
@@ -81,4 +101,5 @@
             </div>
         </footer>
 </body>
+<script src="js/scripts.js"></script>
 </html>
