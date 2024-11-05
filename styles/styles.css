@@ -4,7 +4,15 @@ body {
     font-family: "Nunito", sans-serif;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     padding-top: 270px; /* Para evitar que el contenido se superponga con el header */
+}
+
+main {
+    flex-grow: 1;
+    
 }
 
 /* Header anclado */
@@ -286,4 +294,34 @@ footer {
     font-size: 12px;
     color: #ffffff;
     text-align: center;
+}
+
+/* TURNOS */
+
+.calendar-section {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+input[type="text"], select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, select:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+select {
+    cursor: pointer;
+    appearance: none; /* Elimina el estilo por defecto */
+    background: url('data:image/png;base64,...') no-repeat right; /* Ícono de flecha (agrega tu propio ícono aquí) */
+    background-size: 10px; /* Ajusta el tamaño del ícono */
 }
