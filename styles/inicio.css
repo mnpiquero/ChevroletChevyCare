@@ -43,9 +43,14 @@ body {
 
 .menu-toggle {
     font-size: 24px;
-    display: none;
+    display: block; /* Cambiado a block para mostrar en dispositivos móviles */
 }
 
+@media screen and (min-width: 700px) {
+    .menu-toggle {
+        display: none; /* Ocultar en pantallas más grandes */
+    }
+}
 .btn {
     background-color: #2C2438;
     color: #fff;
