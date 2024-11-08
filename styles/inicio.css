@@ -111,18 +111,16 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
     
 }
-.h2class{
-    color: #fff;
-    
-}
+
 .seccion-titulo{
     color:#fff;
         
 }
 
-.text-box {
+.text-box p {
     max-width: 80%;
     color:#fff;
+    padding: 20px 5px 20px;
     
     
 }
