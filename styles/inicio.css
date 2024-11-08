@@ -16,8 +16,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #2C2438;
+    padding: 0px;
+    background-color: rgba(44, 36, 56, 0.5);
     color: #fff;
     position: fixed;
     width: 100%;
@@ -28,8 +28,11 @@ body {
 .logo img {
     width: 100px;
     height: auto;
+    margin-top: 0;
     border-radius: 50%;
+   
 }
+
 
 .navbar a, .menu-toggle {
     margin: 0 15px;
@@ -62,18 +65,19 @@ body {
     position: relative;
     text-align: center;
     color: #fff;
-    margin-top: 80px;
+    margin-top: 0px;
 }
 
 .hero-img {
     width: 100%;
     height: auto;
+    margin-top: 0; /* Asegúrate de que no haya margen superior */
 }
 
 .hero-overlay {
     position: absolute;
-    top: 50%;
-    left: 10%;
+    top: 20%;
+    right: 10%;
     transform: translateY(-50%);
 }
 
@@ -82,7 +86,7 @@ body {
 }
 
 .hero p {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 /* Estilos de las Secciones de Contenido */
