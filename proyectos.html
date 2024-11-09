@@ -1,109 +1,40 @@
-<!DOCTYPE html> 
-<html lang="es"> 
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Chevy Care</title> 
-    <link rel="stylesheet" href="styles/inicio.css"> 
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/burger.css"> 
-</head> 
-<body> 
-    <!-- Encabezado --> 
-    <header class="header"> 
-        <nav class="navbar"> 
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button> 
-            <div class="burger-menu"> 
-                <div class="burger-icon"> 
-                    <span></span> 
-                    <span></span> 
-                    <span></span> 
-                </div> 
-                <nav class="nav"> 
-                    <ul> 
-                        <li><a href="#inicio">Inicio</a></li> 
-                        <li><a href="#servicios">Servicios</a></li> 
-                        <li><a href="#nosotros">Nosotros</a></li> 
-                        <li><a href="#proyectos">Proyectos</a></li> 
-                        <li><a href="#contacto">Contacto</a></li> 
-                    </ul> 
-                </nav> 
-            </div> 
-            
-        </nav> 
-        
-        
-        <div class="logo"> 
-            <img src="img/logo.jpg" alt="Logo Chevy Care"> 
-        </div> 
-    </header>
-    <script src="js/burger.js"></script>  
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - Chevy</title>
+    <link rel="stylesheet" href="styles/proyectos.css">
+</head>
+<body>
 
-    <!-- Sección Hero --> 
-    <section class="hero"> 
-        <img src="img/inicio.png" alt="Chevrolet Chevy" class="hero-img"> 
-        <div class="hero-overlay"> 
-            <h1>El único e inigualable</h1> 
-            <p>Chevrolet Chevy</p> 
-        </div> 
-    </section> 
-    <!-- Sección de Servicios --> 
-    <section id="servicios" class="content-section"> 
-        <div class="text-box"> 
-            <h2 class="seccion-titulo">Servicios</h2> 
-            <p>Nos especializamos en ofrecer mantenimiento general y detallado para el Chevrolet Chevy. Calidad y experiencia al servicio de tu auto.</p> 
-            <button class="btn">Ver servicios</button> 
-        </div> 
-        <img src="img/seccion1.png" alt="Servicios" class="content-img"> 
-    </section> 
-    <!-- Sección Nosotros --> 
-    <section id="nosotros" class="content-section"> 
-        <div class="text-box"> 
-            <h2 class="seccion-titulo">Nosotros</h2> 
-            <p>En Chevy Care, nos apasiona cuidar cada detalle de tu Chevy. Nuestro equipo está comprometido con la excelencia y la satisfacción de nuestros clientes.</p> 
-            <button class="btn">Conocé más</button> 
-        </div> 
-        <img src="img/seccion2.png" alt="Nosotros" class="content-img"> 
-    </section> 
-    <!-- Sección Proyectos --> 
-    <section id="proyectos" class="content-section"> 
-        <div class="text-box"> 
-            <h2 class="seccion-titulo">Proyectos</h2> 
-            <p>Cada Chevy tiene una historia única. Mira algunos de nuestros proyectos destacados de restauración y personalización.</p> 
-            <button class="btn">Ver proyectos</button> 
-        </div> 
-        <img src="img/seccion3.png" alt="Proyectos" class="content-img"> 
-    </section> 
-    
-    <!-- Sección de Contacto --> 
-    <section class="contact-section"> 
-        <div class="contact-text">
-            <p><strong>¿Te gusta lo que hacemos?</strong><br>Déjanos tu mail para enterarte de todas nuestras novedades y para recibir info acerca de nuestros próximos proyectos</p> 
-            <div class="contact-input">
-                <input type="email" placeholder="Tu correo electrónico">
-                <button class="btnContacto">Enviar</button>
+    <!-- Encabezado -->
+    <header>
+        <div class="header-logo">
+            <img src="img/logo.png" alt="Logo Chevrolet Chevy Care">
+        </div>
+        <h1>PROYECTOS</h1>
+        <p>Cada Chevy que restauramos es un proyecto único. Explora algunos de nuestros trabajos recientes y descubre cómo transformamos estos íconos en verdaderas joyas en la carretera.</p>
+    </header>
+
+    <!-- Sección de Proyectos -->
+    <section class="projects-grid">
+        <!-- Proyecto 1 -->
+        <div class="project-card">
+            <img src="img/proyecto1.jpg" alt="Imagen del Proyecto 1">
+            <div class="project-text-overlay">
+                <h2>PREPARADO PARA CUARTOS DE MILLA</h2>
             </div>
         </div>
-        <div class="content-img">
-            <img src="img/seccion4.png" alt="Proyectos" class="car-img">
+
+        <!-- Proyecto 2 -->
+        <div class="project-card">
+            <img src="img/proyecto2.jpg" alt="Imagen del Proyecto 2">
+            <div class="project-text-overlay">
+                <h2>PERFECCIÓN PARA CARSHOWS</h2>
+            </div>
         </div>
     </section>
 
-    <!-- Pie de Página --> 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-info">
-                <p>Materia: Diseño y Desarrollo Web</p>
-                <p>Curso: 480799</p>
-                <p>Grupo: 7</p>
-            </div>
-            <div class="footer-logo">
-                <img src="img/LogoUADE.png" class="uade" alt="UADE logo">
-            </div>
-        </div>
-        <div class="footer-rights">
-            <p>Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024</p>
-        </div>
-      </footer>
-    </body>
+</body>
 </html>
