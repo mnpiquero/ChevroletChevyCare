@@ -102,7 +102,7 @@ body {
     display: flex;
     align-items: center;
     padding: 50px 50px;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 20px auto; /* Añadido margen para separar las secciones */
     gap: 30px;
     border: 2px solid #2C2438; /* Color y grosor del borde */
@@ -133,17 +133,63 @@ body {
 /* Contacto */
 .contact-section {
     padding: 50px 20px;
-    text-align: center;
     background-color: #E0E0E0;
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden; /* Para evitar cualquier desbordamiento */
+}
+
+.contact-text {
+    max-width: 50%;
+    text-align: left;
+    color: #333;
+}
+
+.contact-text p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-bottom: 20px;
+}
+
+.contact-input {
+    display: flex;
+    align-items: center;
 }
 
 .contact-section input {
     padding: 10px;
     width: 250px;
-    margin-right: 10px;
+    margin-right: 0px;
     border-radius: 5px;
     border: 1px solid #ccc;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content-img {
+    max-width: 100%; /* Ajusta este valor según el ancho que desees para la imagen */
+    margin-right: 0; /* Asegúrate de que no haya margen a la derecha */
+    padding: 0; /* Elimina cualquier padding */
+
+}
+
+.car-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+
 }
 
 /* Pie de Página */
