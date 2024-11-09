@@ -51,8 +51,8 @@ body {
     }
 }
 .btn {
-    background-color: #fff;
-    color: #060606;
+    background-color: #fff !important;
+    color: #333 !important;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -63,7 +63,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #ecd20f;
+    background-color: #ecd20f !important;
 }
 
 /* Estilos de la Sección Hero */
@@ -168,9 +168,9 @@ body {
     border: 1px solid #ccc;
 }
 
-.btn {
+.btnContacto {
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #2C2438;
     color: #fff;
     border: none;
     border-radius: 5px;
