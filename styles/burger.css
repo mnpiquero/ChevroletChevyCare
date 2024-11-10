@@ -73,12 +73,13 @@ body {
     background-color: #f0f0f0;
 }
 
-/* Show menu when active */
+
+/* Muestra el menú cuando la clase active está presente */
 .nav.active {
     display: block;
 }
 
-/* Optional: transition effect for burger icon (on click) */
+/* Transición del icono del menú */
 .burger-icon.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }

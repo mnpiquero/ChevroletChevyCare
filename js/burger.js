@@ -1,6 +1,9 @@
+// burger.js
 function toggleMenu() {
-    const nav = document.querySelector('.nav');
-    nav.classList.toggle('active');
-    const burgerIcon = document.querySelector('.burger-icon');
-    burgerIcon.classList.toggle('active');
+    var navMenu = document.getElementById("navMenu");
+    var burgerIcon = document.querySelector(".burger-icon");
+
+    // Alterna la clase 'active' en ambos elementos
+    navMenu.classList.toggle("active");
+    burgerIcon.classList.toggle("active");
 }

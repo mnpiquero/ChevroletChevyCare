@@ -5,23 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos - Chevy</title>
     <link rel="stylesheet" href="styles/proyectos.css">
+    <link rel="stylesheet" href="styles/burger.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
 
     <!-- Encabezado -->
-    <header>
-        <div class="header-logo">
-            <img src="img/logo.png" alt="Logo Chevrolet Chevy Care">
+    <header class="header">
+        <div class="burger-menu">
+            <div class="burger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <h1>PROYECTOS</h1>
-        <p>Cada Chevy que restauramos es un proyecto único. Explora algunos de nuestros trabajos recientes y descubre cómo transformamos estos íconos en verdaderas joyas en la carretera.</p>
+        <h1>Chevrolet Chevy Care</h1>
+        <div class="logo">
+            <img src="img/logo.jpg" alt="Logo Chevy Care">
+        </div>
     </header>
 
+    <!-- Menú desplegable (oculto por defecto) -->
+    <nav class="nav" id="navMenu">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Sección Hero --> 
+    <section class="hero">   
+        <div class="hero-overlay"> 
+            <h1>El único e inigualable</h1> 
+            <p>Cada Chevy que restauramos es un proyecto único. Explora algunos de nuestros trabajos recientes y descubre cómo transformamos estos íconos en verdaderas joyas en la carretera.</p>
+        </div> 
+    </section> 
+
+    
     <!-- Sección de Proyectos -->
     <section class="projects-grid">
         <!-- Proyecto 1 -->
         <div class="project-card">
-            <img src="img/proyecto1.jpg" alt="Imagen del Proyecto 1">
+            <img src="img/proyectos1.png" alt="Imagen del Proyecto 1">
             <div class="project-text-overlay">
                 <h2>PREPARADO PARA CUARTOS DE MILLA</h2>
             </div>
@@ -29,12 +58,67 @@
 
         <!-- Proyecto 2 -->
         <div class="project-card">
-            <img src="img/proyecto2.jpg" alt="Imagen del Proyecto 2">
-            <div class="project-text-overlay">
+            <img src="img/proyectos2.png" alt="Imagen del Proyecto 2">
+            <div class="project-text-overlay2">
                 <h2>PERFECCIÓN PARA CARSHOWS</h2>
             </div>
         </div>
     </section>
 
+    <!-- Sección de Proyectos -->
+    <section class="projects-grid">
+        <!-- Proyecto 3 -->
+        <div class="project-card">
+            <img src="img/proyectos3.png" alt="Imagen del Proyecto 3">
+            <div class="project-text-overlay">
+                <h2>PARA TU DÍA A DÍA</h2>
+            </div>
+        </div>
+
+        <!-- Proyecto 4 -->
+        <div class="project-card">
+            <img src="img/proyectos4.png" alt="Imagen del Proyecto 4">
+            <div class="project-text-overlay2">
+                <h2>RECREACIÓN DE CLÁSICOS</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section class="projects-grid">
+        <!-- Proyecto 5 -->
+        <div class="project-card">
+            <img src="img/proyectos5.png" alt="Imagen del Proyecto 5">
+            <div class="project-text-overlay">
+                <h2>RESTAURADO A NUEVO</h2>
+            </div>
+        </div>
+
+        <!-- Proyecto 6 -->
+        <div class="project-card">
+            <img src="img/proyectos6.png" alt="Imagen del Proyecto 6">
+            <div class="project-text-overlay2">
+                <h2>PURA PERFORMANCE DEPORTIVA</h2>
+            </div>
+        </div>
+    </section>
 </body>
+    <!-- Pie de Página --> 
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>Materia: Diseño y Desarrollo Web</p>
+                <p>Curso: 480799</p>
+                <p>Grupo: 7</p>
+            </div>
+            <div class="footer-logo">
+                <img src="img/LogoUADE.png" class="uade" alt="UADE logo">
+            </div>
+        </div>
+        <div class="footer-rights">
+            <p>Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024</p>
+        </div>
+      </footer>
+    </body>
+</html>
 </html>
