@@ -1,113 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Presupuestos - Chevrolet Chevy Care</title>
-        <link rel="stylesheet" href="styles/frecuentes.css">
-        <link rel="stylesheet" href="styles/styles.css">
-        <link rel="stylesheet" href="styles/burger.css">
-        <link rel="stylesheet" href="styles/footer.css">
-        <link rel="stylesheet" href="js/frecuentes.js">
-        <link rel="stylesheet" href="js/burger.js">
-        <link rel="icon" type="image/png" href="img/logo.jpg">
-        <link href="https://fonts.googleapis.com/css2?family=Porter+Sans+Block&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="es">
 
-    </head>
-    <body>
-        <header>
-            <div class="navBar">
-                <div class="menu">
-                    <div class="logo-container logodesktop">
-                        <img class="logo" src="./img/logo.jpg" alt="logo.jpg" />
-                        <h1 class="title">Chevrolet Chevy Care</h1>
-                    </div>
-                    <ul class="menu">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="turnos.html">Turnos</a></li>
-                        <li><a href="presupuestos.html" class="active">Presupuestos</a></li>
-                        <li><a href="consejos.html">Consejos</a></li>
-                        <li><a href="proyectos.html">Proyectos</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuestos - Chevrolet Chevy Care</title>
+    <link rel="stylesheet" href="styles/frecuentes.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/burger.css">
+    <link rel="stylesheet" href="styles/burger2.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="js/frecuentes.js">
+    <link rel="stylesheet" href="js/burger.js">
+    <link rel="icon" type="image/png" href="img/logo.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Porter+Sans+Block&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="navBar">
+            <div class="menu" style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div id="menuToggle" style="width: 30px;">
+                    <input type="checkbox" id="menuCheckbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <li>
+                            <a href="index.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Inicio</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="servicios.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Servicios</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="turnos.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Turnos</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="consejos.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Consejos</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="proyectos.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Proyectos</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="faq.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">FAQ</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="nosotros.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Nosotros</label>
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                <div class="burger-menu">
-                    <div class="logo-container logomobile">
-                        <img class="logo" src="./img/logo.jpg" alt="logo.jpg" />
-                    </div>
-                    <div class="burger-icon" onclick="toggleMenu()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <nav class="nav">
-                        <ul class="burger-options">
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="servicios.html">Servicios</a></li>
-                            <li><a href="nosotros.html">Nosotros</a></li>
-                            <li><a href="turnos.html">Turnos</a></li>
-                            <li><a href="presupuestos.html" class="active">Presupuestos</a></li>
-                            <li><a href="consejos.html">Consejos</a></li>
-                            <li><a href="proyectos.html">Proyectos</a></li>
-                            <li><a href="faq.html" >FAQ</a></li>
-                        </ul>
-                    </nav>
+                <div class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h1 class="title">Chevrolet Chevy Care</h1>
+
+                <div class="logo-container logodesktop">
+
+                    <img class="logo" src="./img/logo.jpg" alt="logo.jpg" />
                 </div>
             </div>
-        </header>
-    
-        <!-- Menú desplegable (oculto por defecto) -->
-        <nav class="nav" id="navMenu">
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-        <main>
-            <section class="presupuestos-section">
-                <h2 class="presupuestos-title">Presupuestos</h2>
-                <p class="presupuestos-description">
-                    Nuestros presupuestos son hechos a medida dependiendo del cliente, auto y tiempo de espera actual.
-                </p>
+        </div>
+    </header>
+
+    <!-- Menú desplegable (oculto por defecto) -->
+    <nav class="nav" id="navMenu">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="presupuestos-section" style="display: flex; flex-direction: column; align-items: center;">
+            <h2 class="presupuestos-title subtitle">Presupuestos</h2>
+            <p class="presupuestos-description">
+                Nuestros presupuestos son hechos a medida dependiendo del cliente, auto y tiempo de espera actual.
+            </p>
+            <div class="img-wrapper">
                 <img src="img/seccion1.png" alt="Imagen de mecánico trabajando en un auto" class="presupuestos-image">
-                <article class="presupuestos-content">
-                    <p>
-                        En Chevrolet Chevy Care, comprendemos que cada proyecto de restauración de autos antiguos es único, desde el modelo y el estado del vehículo hasta las expectativas y visión de cada cliente. Es por eso que ofrecemos presupuestos personalizados, adaptados a las necesidades específicas de cada restauración.
-                    </p>
-                    <p>
-                        Nuestro equipo evalúa cuidadosamente cada detalle del vehículo, incluyendo la pintura, el motor, el interior y los acabados, para ofrecerte una estimación detallada y transparente. Así, tendrás una visión clara de los tiempos y costos de cada etapa del proceso, sin sorpresas.
-                    </p>
-                    <p>
-                        Para nosotros, la transparencia es clave en la relación con nuestros clientes. No importa si estás buscando una restauración completa, una puesta a punto o una modificación en específico; nos aseguramos de brindarte opciones y asesorarte en cada paso, de acuerdo con tus preferencias y tus expectativas.
-                    </p>
-                    <p>
-                        Solicita tu presupuesto <strong>sin compromiso</strong> y descubre cómo podemos devolverle a tu vehículo su esencia original, manteniendo su valor y encanto con el mayor cuidado y precisión.
-                    </p>
-                    <button class="contact-button">Contactanos</button>
-                </article>
-            </section>
-        </main>
-        <footer>
-            <div class="footer-container">
-                <div class="footer-info">
-                    <p>Materia: Diseño y Desarrollo Web</p>
-                    <p>Curso: 480799</p>
-                    <p>Grupo: 7</p>
-                </div>
-                <div class="footer-logo">
-                    <img src="img/LogoUADE.png" class="uade" alt="UADE logo">
-                </div>
+
             </div>
-            <div class="footer-rights">
-                <p>Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024</p>
+            <div style="margin: 20px 0">
+                <h2 style="font-family: Arial, Helvetica, sans-serif; ">Para calcular el presupuesto de
+                    tu servicio,
+                    por
+                    favor llena el formulario aqui debajo</h2>
+                <div>Nota: Los precios pueden variar al momento de hacer el presupuesto final</div>
             </div>
-        </footer>
+            <div style="margin-bottom: 15px; display: flex; flex-direction: row; align-items: center; gap: 20px">
+                <div>
+                    <h3 style="font-family: Arial, Helvetica, sans-serif; ">Seleccione el servicio: </h3>
+                </div>
+                <div>
+                    <select id="service" style="margin-top: 0;">
+                        <option selected disabled>Servicio</option>
+                        <option value="maintenance">Mantenimiento Preventivo</option>
+                        <option value="detailing">Restauración - Detailing</option>
+                        <option value="modifications">Modificaciones Aftermarket</option>
+                    </select>
+                </div>
+
+            </div>
+            <div style="margin-bottom: 15px; display: flex; flex-direction: row; align-items: center; gap: 20px">
+                <h3 style="font-family: Arial, Helvetica, sans-serif; ">Seleccione la urgencia: </h3>
+                <select style="margin-top: 0;" id="urgency">
+                    <option selected disabled>Urgencia</option>
+                    <option value="0">Normal (+0%)</option>
+                    <option value="15">Prioridad Alta (+15%)</option>
+                    <option value="30">Urgente (+30%)</option>
+                </select>
+            </div>
+            <div style="margin-bottom: 15px; display: flex; flex-direction: row; align-items: center; gap: 20px">
+                <h3 style="font-family: Arial, Helvetica, sans-serif; ">Ingrese el año de su vehiculo: </h3>
+                <input id="year" placeholder="Año" type="number" style="height: 29px; width: 200px;" />
+            </div>
+
+            <button class="btnContacto" onclick="calculateBudget()">Calcular presupuesto</button>
+            <div id="result"></div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>Materia: Diseño y Desarrollo Web</p>
+                <p>Curso: 480799</p>
+                <p>Grupo: 7</p>
+            </div>
+            <div class="footer-logo">
+                <img src="img/LogoUADE.png" class="uade" alt="UADE logo">
+            </div>
+        </div>
+        <div class="footer-rights">
+            <p>Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024</p>
+        </div>
+    </footer>
 </body>
+<script>
+    // Price ranges for each service
+    const prices = {
+        maintenance: { min: 315, max: 405 },
+        detailing: { min: 750, max: 1150 },
+        modifications: { min: 1500, max: 2600 },
+    };
+
+    function calculateBudget() {
+        const service = document.getElementById("service").value;
+        const urgency = parseFloat(document.getElementById("urgency").value);
+        const year = document.getElementById("year").value;
+
+        if (!service || isNaN(urgency) || !year) {
+            document.getElementById("result").innerText = "Por favor complete todos los campos.";
+            return;
+        }
+
+        if (year > 1980 || year < 1968) {
+            document.getElementById("result").innerText = "La fecha del vehiculo no es valida.";
+            return;
+        }
+
+        // Get base prices for the selected service
+        const baseMin = prices[service].min;
+        const baseMax = prices[service].max;
+
+        // Calculate total based on urgency
+        const totalMin = baseMin + (baseMin * urgency / 100);
+        const totalMax = baseMax + (baseMax * urgency / 100);
+
+        // Display the result
+        document.getElementById("result").innerText =
+            `Presupuesto estimado para el servicio en el año ${year}: Entre $${totalMin.toFixed(2)} y $${totalMax.toFixed(2)} (Dolares americanos)`;
+    }
+</script>
+
 </html>

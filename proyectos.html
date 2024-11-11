@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,61 +9,82 @@
     <link rel="stylesheet" href="styles/burger.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/burger2.css" />
     <link rel="icon" type="image/png" href="img/logo.jpg">
 </head>
+
 <body>
     <header>
         <div class="navBar">
-            <div class="menu">
-                <div class="logo-container logodesktop">
-                    <img class="logo" src="./img/logo.jpg" alt="logo.jpg" />
-                    <h1 class="title">Chevrolet Chevy Care</h1>
-                </div>
-                <ul class="menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="turnos.html">Turnos</a></li>
-                    <li><a href="presupuestos.html">Presupuestos</a></li>
-                    <li><a href="consejos.html">Consejos</a></li>
-                    <li><a href="proyectos.html" class="active">Proyectos</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                </ul>
-            </div>
-            <div class="burger-menu">
-                <div class="logo-container logomobile">
-                    <img class="logo" src="./img/logo.jpg" alt="logo.jpg" />
-                </div>
-                <div class="burger-icon" onclick="toggleMenu()">
+            <div class="menu" style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div id="menuToggle" style="width: 30px;">
+                    <input type="checkbox" id="menuCheckbox" />
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
-                <nav class="nav">
-                    <ul class="burger-options">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="turnos.html">Turnos</a></li>
-                        <li><a href="presupuestos.html">Presupuestos</a></li>
-                        <li><a href="consejos.html">Consejos</a></li>
-                        <li><a href="proyectos.html" class="active">Proyectos</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
+                    <ul id="menu">
+                        <li>
+                            <a href="index.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Inicio</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="servicios.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Servicios</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="turnos.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Turnos</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="consejos.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Consejos</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="proyectos.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Proyectos</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="faq.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">FAQ</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="nosotros.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Nosotros</label>
+                            </a>
+                        </li>
                     </ul>
-                </nav>
+                </div>
+                <div class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h1 class="title">Chevrolet Chevy Care</h1>
+
+                <div class="logo-container logodesktop">
+
+                    <img class="logo" src="./img/logo.jpg" alt="logo.jpg" />
+                </div>
             </div>
         </div>
     </header>
 
-    <!-- Sección Hero --> 
-    <section class="hero">   
-        <div class="hero-overlay"> 
-            <h1>El único e inigualable</h1> 
-            <p>Cada Chevy que restauramos es un proyecto único. Explora algunos de nuestros trabajos recientes y descubre cómo transformamos estos íconos en verdaderas joyas en la carretera.</p>
-        </div> 
-    </section> 
+    <!-- Sección Hero -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>El único e inigualable</h1>
+            <p>Cada Chevy que restauramos es un proyecto único. Explora algunos de nuestros trabajos recientes y
+                descubre cómo transformamos estos íconos en verdaderas joyas en la carretera.</p>
+        </div>
+    </section>
 
-    
+
     <!-- Sección de Proyectos -->
     <section class="projects-grid">
         <!-- Proyecto 1 -->
@@ -120,22 +142,24 @@
         </div>
     </section>
 </body>
-    <!-- Pie de Página --> 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-info">
-                <p>Materia: Diseño y Desarrollo Web</p>
-                <p>Curso: 480799</p>
-                <p>Grupo: 7</p>
-            </div>
-            <div class="footer-logo">
-                <img src="img/LogoUADE.png" class="uade" alt="UADE logo">
-            </div>
+<!-- Pie de Página -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <p>Materia: Diseño y Desarrollo Web</p>
+            <p>Curso: 480799</p>
+            <p>Grupo: 7</p>
         </div>
-        <div class="footer-rights">
-            <p>Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024</p>
+        <div class="footer-logo">
+            <img src="img/LogoUADE.png" class="uade" alt="UADE logo">
         </div>
-      </footer>
-    </body>
+    </div>
+    <div class="footer-rights">
+        <p>Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024</p>
+    </div>
+</footer>
+</body>
+
 </html>
+
 </html>

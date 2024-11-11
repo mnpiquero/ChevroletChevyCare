@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,62 +11,75 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="js/frecuentes.js">
     <link rel="stylesheet" href="js/burger.js">
+    <link rel="stylesheet" href="styles/burger2.css" />
+
     <link rel="icon" type="image/png" href="img/logo.jpg">
 </head>
+
 <body>
     <header>
         <div class="navBar">
-            <div class="menu">
-                <div class="logo-container logodesktop">
-                    <img class="logo" src="./img/logo.jpg" alt="logo.jpg" />
-                    <h1 class="title">Chevrolet Chevy Care</h1>
-                </div>
-                <ul class="menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="turnos.html">Turnos</a></li>
-                    <li><a href="presupuestos.html">Presupuestos</a></li>
-                    <li><a href="consejos.html">Consejos</a></li>
-                    <li><a href="proyectos.html">Proyectos</a></li>
-                    <li><a href="faq.html" class="active">FAQ</a></li>
-                </ul>
-            </div>
-            <div class="burger-menu">
-                <div class="logo-container logomobile">
-                    <img class="logo" src="./img/logo.jpg" alt="logo.jpg" />
-                </div>
-                <div class="burger-icon" onclick="toggleMenu()">
+            <div class="menu" style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div id="menuToggle" style="width: 30px;">
+                    <input type="checkbox" id="menuCheckbox" />
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
-                <nav class="nav">
-                    <ul class="burger-options">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="turnos.html">Turnos</a></li>
-                        <li><a href="presupuestos.html">Presupuestos</a></li>
-                        <li><a href="consejos.html">Consejos</a></li>
-                        <li><a href="proyectos.html">Proyectos</a></li>
-                        <li><a href="faq.html" class="active">FAQ</a></li>
+                    <ul id="menu">
+                        <li>
+                            <a href="index.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Inicio</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="servicios.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Servicios</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="turnos.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Turnos</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="consejos.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Consejos</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="proyectos.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Proyectos</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="faq.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">FAQ</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="nosotros.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Nosotros</label>
+                            </a>
+                        </li>
                     </ul>
-                </nav>
+                </div>
+                <div class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h1 class="title">Chevrolet Chevy Care</h1>
+
+                <div class="logo-container logodesktop">
+
+                    <img class="logo" src="./img/logo.jpg" alt="logo.jpg" />
+                </div>
             </div>
         </div>
     </header>
 
     <!-- Menú desplegable (oculto por defecto) -->
-    <nav class="nav" id="navMenu">
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+
     <section class="faq-section">
         <h2>Preguntas Frecuentes</h2>
         <div class="faq-item">
@@ -75,36 +89,47 @@
         <div class="faq-item">
             <div class="faq-question">¿Que incluye el mantenimiento preventivo? <span class="toggle">+</span></div>
             <div class="faq-answer">
-                El mantenimiento preventivo del Chevy incluye cambio de aceite, revisión de filtros, líquidos, frenos, neumáticos, batería, escape, suspensión, luces, correas y diagnóstico electrónico, asegurando así rendimiento óptimo y seguridad.</div>
+                El mantenimiento preventivo del Chevy incluye cambio de aceite, revisión de filtros, líquidos, frenos,
+                neumáticos, batería, escape, suspensión, luces, correas y diagnóstico electrónico, asegurando así
+                rendimiento óptimo y seguridad.</div>
         </div>
         <div class="faq-item">
             <div class="faq-question">¿Puedo personalizar el nivel de detalle en el servicio de detailing?
-                <span class="toggle">+</span></div>
-            <div class="faq-answer">    
-            Sí, puedes personalizar el detailing de tu auto. Desde limpieza básica hasta opciones avanzadas como pulido, encerado y protección de pintura, ajustando el nivel de detalle según tus necesidades y presupuesto.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">¿Es posible restaurar mi Chevy aunque este en muy mal estado? <span class="toggle">+</span></div>
-            <div class="faq-answer">Sí, es posible restaurar tu Chevy aunque esté en mal estado. El proceso incluye evaluación profunda, reparaciones estructurales, restauración de partes dañadas y acabado detallado para devolverle su apariencia original.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">¿Cómo puedo programar una cita o solicitar un presupuesto? <span class="toggle">+</span></div>
+                <span class="toggle">+</span>
+            </div>
             <div class="faq-answer">
-                Para programar una cita o solicitar un presupuesto, puedes contactar al servicio al cliente por teléfono, enviar un correo electrónico o completar el formulario en el sitio web.</div>
+                Sí, puedes personalizar el detailing de tu auto. Desde limpieza básica hasta opciones avanzadas como
+                pulido, encerado y protección de pintura, ajustando el nivel de detalle según tus necesidades y
+                presupuesto.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">¿Es posible restaurar mi Chevy aunque este en muy mal estado? <span
+                    class="toggle">+</span></div>
+            <div class="faq-answer">Sí, es posible restaurar tu Chevy aunque esté en mal estado. El proceso incluye
+                evaluación profunda, reparaciones estructurales, restauración de partes dañadas y acabado detallado para
+                devolverle su apariencia original.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">¿Cómo puedo programar una cita o solicitar un presupuesto? <span
+                    class="toggle">+</span></div>
+            <div class="faq-answer">
+                Para programar una cita o solicitar un presupuesto, puedes contactar al servicio al cliente por
+                teléfono, enviar un correo electrónico o completar el formulario en el sitio web.</div>
         </div>
         <div class="faq-item">
             <div class="faq-question">¿Ofrecen garantía? <span class="toggle">+</span></div>
             <div class="faq-answer">
-                Sí, ofrecemos garantía en nuestros servicios de mantenimiento y restauración para asegurar la satisfacción y confianza en la calidad del trabajo realizado en tu Chevy.</div>
+                Sí, ofrecemos garantía en nuestros servicios de mantenimiento y restauración para asegurar la
+                satisfacción y confianza en la calidad del trabajo realizado en tu Chevy.</div>
         </div>
-    
+
     </section>
 
 
     <script src="js/frecuentes.js"></script>
-    
 
-    <!-- Pie de Página --> 
+
+    <!-- Pie de Página -->
     <footer>
         <div class="footer-container">
             <div class="footer-info">
@@ -119,6 +144,7 @@
         <div class="footer-rights">
             <p>Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024</p>
         </div>
-      </footer>
-    </body>
+    </footer>
+</body>
+
 </html>

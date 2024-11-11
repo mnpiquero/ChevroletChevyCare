@@ -1,119 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Servicios - Chevrolet Chevy Care</title>
-        <link rel="stylesheet" href="styles/frecuentes.css">
-        <link rel="stylesheet" href="styles/styles.css">
-        <link rel="stylesheet" href="styles/burger.css">
-        <link rel="stylesheet" href="styles/footer.css">
-        <link rel="stylesheet" href="js/frecuentes.js">
-        <link rel="stylesheet" href="js/burger.js">
-        <link rel="icon" type="image/png" href="img/logo.jpg">
-        <link href="https://fonts.googleapis.com/css2?family=Porter+Sans+Block&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="es">
 
-    </head>
-    <body>
-        <header>
-            <div class="navBar">
-                <div class="menu">
-                    <div class="logo-container logodesktop">
-                        <img class="logo" src="./img/logo.jpg" alt="logo.jpg" />
-                        <h1 class="title">Chevrolet Chevy Care</h1>
-                    </div>
-                    <ul class="menu">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="servicios.html"class="active">Servicios</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="turnos.html">Turnos</a></li>
-                        <li><a href="presupuestos.html">Presupuestos</a></li>
-                        <li><a href="consejos.html">Consejos</a></li>
-                        <li><a href="proyectos.html">Proyectos</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Chevrolet Chevy Care</title>
+    <link rel="stylesheet" href="styles/frecuentes.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/burger.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="js/frecuentes.js">
+    <link rel="stylesheet" href="js/burger.js">
+    <link rel="stylesheet" href="styles/burger2.css" />
+    <link rel="icon" type="image/png" href="img/logo.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Porter+Sans+Block&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="navBar">
+            <div class="menu" style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div id="menuToggle" style="width: 30px;">
+                    <input type="checkbox" id="menuCheckbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <li>
+                            <a href="index.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Inicio</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="servicios.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Servicios</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="turnos.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Turnos</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="consejos.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Consejos</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="proyectos.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Proyectos</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="faq.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">FAQ</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="nosotros.html">
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Nosotros</label>
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                <div class="burger-menu">
-                    <div class="logo-container logomobile">
-                        <img class="logo" src="./img/logo.jpg" alt="logo.jpg" />
-                    </div>
-                    <div class="burger-icon" onclick="toggleMenu()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <nav class="nav">
-                        <ul class="burger-options">
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="servicios.html"class="active">Servicios</a></li>
-                            <li><a href="nosotros.html">Nosotros</a></li>
-                            <li><a href="turnos.html">Turnos</a></li>
-                            <li><a href="presupuestos.html" >Presupuestos</a></li>
-                            <li><a href="consejos.html">Consejos</a></li>
-                            <li><a href="proyectos.html">Proyectos</a></li>
-                            <li><a href="faq.html" >FAQ</a></li>
-                        </ul>
-                    </nav>
+                <div class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h1 class="title">Chevrolet Chevy Care</h1>
+
+                <div class="logo-container logodesktop">
+
+                    <img class="logo" src="./img/logo.jpg" alt="logo.jpg" />
                 </div>
             </div>
-        </header>
-        <nav class="nav" id="navMenu">
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-        <main>
-            <section class="servicios-section">
-               <div class="servicio-item"> <h2 class="servicios-title">Mantenimiento y restauración experta para tu Chevy, preservando su valor y rendimiento.</h2></div>
-                
-                <!-- Mantenimiento Preventivo -->
-                <div class="servicio-item">
-                    <img src="img/servicios1.png" alt="Imagen de mantenimiento preventivo" class="servicio-image">
-                    <div class="servicio-content">
-                        <h3>Mantenimiento preventivo</h3>
-                        <p>Mantén tu Chevy Camaro clásico en óptimas condiciones con nuestro servicio de mantenimiento preventivo. Nos especializamos en la inspección detallada de cada componente clave, asegurando que tu vehículo funcione de manera eficiente y segura. Desde cambios de aceite y revisión de frenos hasta el ajuste del motor y la suspensión, nos encargamos de prevenir problemas mayores antes de que ocurran. Con nuestro enfoque proactivo, alargamos la vida útil de tu Camaro y te brindamos la tranquilidad de que siempre estará listo para la carretera.</p>
-                    </div>
-                </div>
-    
-                <!-- Restauración - Detailing -->
-                <div class="servicio-item reverse">
-                    <img src="img/servicios2.png" alt="Imagen de restauración" class="servicio-image">
-                    <div class="servicio-content">
-                        <h3>Restauración - Detailing</h3>
-                        <p>Devuélvele a tu Chevy Camaro clásico su esplendor original con nuestro servicio de restauración y detailing. Nos enfocamos en cada detalle, desde la carrocería hasta el interior, utilizando técnicas avanzadas para eliminar imperfecciones, corregir la pintura y revitalizar el acabado. También restauramos el brillo de los elementos cromados y nos encargamos de limpiar y proteger cada superficie. Con nuestra experiencia en autos clásicos, tu Camaro lucirá como el día en que salió de la fábrica, listo para deslumbrar en cualquier exhibición o evento.</p>
-                    </div>
-                </div>
-    
-                <!-- Modificaciones Aftermarket -->
-                <div class="servicio-item">
-                    <img src="img/servicios3.png" alt="Imagen de modificaciones aftermarket" class="servicio-image">
-                    <div class="servicio-content">
-                        <h3>Modificaciones Aftermarket</h3>
-                        <p>Dale a tu Chevy Camaro un toque único con nuestras modificaciones aftermarket. Ofrecemos soluciones a medida para mejorar el rendimiento, la estética y el confort de tu vehículo, respetando su esencia clásica. Ya sea que busques más potencia bajo el capó, una suspensión mejorada o cambios en el diseño exterior, nuestro equipo experto trabaja contigo para llevar a cabo cada ajuste con precisión. Con nuestras modificaciones, tu Camaro no solo se destacará por su estilo personalizado, sino también por su rendimiento mejorado.</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="footer-container">
-                <div class="footer-info">
-                    <p>Materia: Diseño y Desarrollo Web</p>
-                    <p>Curso: 480799</p>
-                    <p>Grupo: 7</p>
-                </div>
-                <div class="footer-logo">
-                    <img src="img/LogoUADE.png" class="uade" alt="UADE logo">
+        </div>
+    </header>
+
+    <main>
+        <section class="servicios-section">
+            <div class="servicio-item">
+                <h2 class="servicios-title">Mantenimiento y restauración experta para tu Chevy, preservando su valor y
+                    rendimiento.</h2>
+            </div>
+
+            <!-- Mantenimiento Preventivo -->
+            <div class="servicio-item">
+                <img src="img/servicios1.png" alt="Imagen de mantenimiento preventivo" class="servicio-image">
+                <div class="servicio-content">
+                    <h3>Mantenimiento preventivo</h3>
+                    <p>Mantén tu Chevy Camaro clásico en óptimas condiciones con nuestro servicio de mantenimiento
+                        preventivo. Nos especializamos en la inspección detallada de cada componente clave, asegurando
+                        que tu vehículo funcione de manera eficiente y segura. Desde cambios de aceite y revisión de
+                        frenos hasta el ajuste del motor y la suspensión, nos encargamos de prevenir problemas mayores
+                        antes de que ocurran. Con nuestro enfoque proactivo, alargamos la vida útil de tu Camaro y te
+                        brindamos la tranquilidad de que siempre estará listo para la carretera.</p>
                 </div>
             </div>
-            <div class="footer-rights">
-                <p>Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024</p>
+
+            <!-- Restauración - Detailing -->
+            <div class="servicio-item reverse">
+                <img src="img/servicios2.png" alt="Imagen de restauración" class="servicio-image">
+                <div class="servicio-content">
+                    <h3>Restauración - Detailing</h3>
+                    <p>Devuélvele a tu Chevy Camaro clásico su esplendor original con nuestro servicio de restauración y
+                        detailing. Nos enfocamos en cada detalle, desde la carrocería hasta el interior, utilizando
+                        técnicas avanzadas para eliminar imperfecciones, corregir la pintura y revitalizar el acabado.
+                        También restauramos el brillo de los elementos cromados y nos encargamos de limpiar y proteger
+                        cada superficie. Con nuestra experiencia en autos clásicos, tu Camaro lucirá como el día en que
+                        salió de la fábrica, listo para deslumbrar en cualquier exhibición o evento.</p>
+                </div>
             </div>
-        </footer>
+
+            <!-- Modificaciones Aftermarket -->
+            <div class="servicio-item">
+                <img src="img/servicios3.png" alt="Imagen de modificaciones aftermarket" class="servicio-image">
+                <div class="servicio-content">
+                    <h3>Modificaciones Aftermarket</h3>
+                    <p>Dale a tu Chevy Camaro un toque único con nuestras modificaciones aftermarket. Ofrecemos
+                        soluciones a medida para mejorar el rendimiento, la estética y el confort de tu vehículo,
+                        respetando su esencia clásica. Ya sea que busques más potencia bajo el capó, una suspensión
+                        mejorada o cambios en el diseño exterior, nuestro equipo experto trabaja contigo para llevar a
+                        cabo cada ajuste con precisión. Con nuestras modificaciones, tu Camaro no solo se destacará por
+                        su estilo personalizado, sino también por su rendimiento mejorado.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>Materia: Diseño y Desarrollo Web</p>
+                <p>Curso: 480799</p>
+                <p>Grupo: 7</p>
+            </div>
+            <div class="footer-logo">
+                <img src="img/LogoUADE.png" class="uade" alt="UADE logo">
+            </div>
+        </div>
+        <div class="footer-rights">
+            <p>Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024</p>
+        </div>
+    </footer>
 </body>
+
 </html>
