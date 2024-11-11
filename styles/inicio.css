@@ -29,11 +29,12 @@ body {
     width: 100px;
     height: auto;
     margin-top: 0;
-    border-radius: 50%; 
+    border-radius: 50%;
 }
 
 
-.navbar a, .menu-toggle {
+.navbar a,
+.menu-toggle {
     margin: 0 15px;
     color: #fff;
     text-decoration: none;
@@ -42,14 +43,17 @@ body {
 
 .menu-toggle {
     font-size: 24px;
-    display: block; /* Cambiado a block para mostrar en dispositivos móviles */
+    display: block;
+    /* Cambiado a block para mostrar en dispositivos móviles */
 }
 
 @media screen and (min-width: 700px) {
     .menu-toggle {
-        display: none; /* Ocultar en pantallas más grandes */
+        display: none;
+        /* Ocultar en pantallas más grandes */
     }
 }
+
 .btn {
     background-color: #fff !important;
     color: #333 !important;
@@ -58,8 +62,8 @@ body {
     cursor: pointer;
     border-radius: 5px;
     font-weight: bold;
-    
-   
+
+
 }
 
 .btn:hover {
@@ -77,7 +81,8 @@ body {
 .hero-img {
     width: 100%;
     height: auto;
-    margin-top: 0; /* Asegúrate de que no haya margen superior */
+    margin-top: 0;
+    /* Asegúrate de que no haya margen superior */
 }
 
 .hero-overlay {
@@ -89,12 +94,12 @@ body {
 
 .hero h1 {
     font-size: 3rem;
-    
+
 }
 
 .hero p {
     font-size: 2rem;
-    
+
 }
 
 /* Estilos de las Secciones de Contenido */
@@ -103,26 +108,32 @@ body {
     align-items: center;
     padding: 50px 50px;
     max-width: 1000px;
-    margin: 20px auto; /* Añadido margen para separar las secciones */
+    height: 386px;
+    margin: 20px auto;
+    /* Añadido margen para separar las secciones */
     gap: 30px;
-    border: 2px solid #2C2438; /* Color y grosor del borde */
-    border-radius: 10px; /* Esquinas redondeadas del recuadro */
-    background-color: #2c2438; /* Color de fondo del recuadro */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
-    
+    border: 2px solid #2C2438;
+    /* Color y grosor del borde */
+    border-radius: 45px;
+    /* Esquinas redondeadas del recuadro */
+    background-color: #2c2438;
+    /* Color de fondo del recuadro */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra para dar profundidad */
+
 }
 
-.seccion-titulo{
-    color:#fff;
-        
+.seccion-titulo {
+    color: #fff;
+
 }
 
 .text-box p {
     max-width: 80%;
-    color:#fff;
+    color: #fff;
     padding: 20px 5px 20px;
-    
-    
+
+
 }
 
 .content-img {
@@ -140,7 +151,8 @@ body {
     justify-content: space-between;
     max-width: 100%;
     margin: 0 auto;
-    overflow: hidden; /* Para evitar cualquier desbordamiento */
+    overflow: hidden;
+    /* Para evitar cualquier desbordamiento */
 }
 
 .contact-text {
@@ -178,9 +190,12 @@ body {
 }
 
 .content-img {
-    max-width: 100%; /* Ajusta este valor según el ancho que desees para la imagen */
-    margin-right: 0; /* Asegúrate de que no haya margen a la derecha */
-    padding: 0; /* Elimina cualquier padding */
+    max-width: 100%;
+    /* Ajusta este valor según el ancho que desees para la imagen */
+    margin-right: 0;
+    /* Asegúrate de que no haya margen a la derecha */
+    padding: 0;
+    /* Elimina cualquier padding */
 
 }
 
