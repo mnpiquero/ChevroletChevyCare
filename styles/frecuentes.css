@@ -18,7 +18,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #2C2438; /* Color de fondo para el encabezado */
+    background-color: #2C2438;
+    /* Color de fondo para el encabezado */
     color: #fff;
     position: fixed;
     width: 100%;
@@ -38,7 +39,8 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
-    flex-grow: 1; /* Ocupa el espacio central */
+    flex-grow: 1;
+    /* Ocupa el espacio central */
     margin: 0;
 }
 
@@ -50,12 +52,14 @@ body {
 
 /* Ajustes adicionales para centrar */
 .header h1 {
-    margin-left: -24px; /* Ajuste para centrar el título entre el botón y el logo */
+    margin-left: -24px;
+    /* Ajuste para centrar el título entre el botón y el logo */
 }
 
 @media screen and (min-width: 700px) {
     .menu-toggle {
-        display: none; /* Ocultar en pantallas más grandes */
+        display: none;
+        /* Ocultar en pantallas más grandes */
     }
 }
 
@@ -85,12 +89,14 @@ body {
 }
 
 .faq-section {
+    width: 60%;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     max-width: 600px;
     margin: auto;
+    margin-top: 150px;
 }
 
 .faq-item {
@@ -114,7 +120,7 @@ body {
 .faq-answer {
     display: none;
     padding: 15px;
-    background-color: #fafafa;
+    background-color: #d8d8d8;
     border-top: 1px solid #ccc;
 }
 
