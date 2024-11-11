@@ -3,39 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos - Chevy</title>
+    <title>Proyectos - Chevrolet Chevy Care</title>
     <link rel="stylesheet" href="styles/proyectos.css">
     <link rel="stylesheet" href="styles/burger.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="icon" type="image/png" href="img/logo.jpg">
 </head>
 <body>
-
-    <!-- Encabezado -->
-    <header class="header">
-        <div class="burger-menu">
-            <div class="burger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+    <header>
+        <div class="navBar">
+            <div class="menu">
+                <div class="logo-container logodesktop">
+                    <img class="logo" src="./img/logo.jpg" alt="logo.jpg" />
+                    <h1 class="title">Chevrolet Chevy Care</h1>
+                </div>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="turnos.html">Turnos</a></li>
+                    <li><a href="presupuestos.html">Presupuestos</a></li>
+                    <li><a href="consejos.html">Consejos</a></li>
+                    <li><a href="proyectos.html" class="active">Proyectos</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="burger-menu">
+                <div class="logo-container logomobile">
+                    <img class="logo" src="./img/logo.jpg" alt="logo.jpg" />
+                </div>
+                <div class="burger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="nav">
+                    <ul class="burger-options">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="turnos.html">Turnos</a></li>
+                        <li><a href="presupuestos.html">Presupuestos</a></li>
+                        <li><a href="consejos.html">Consejos</a></li>
+                        <li><a href="proyectos.html" class="active">Proyectos</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-        <h1>Chevrolet Chevy Care</h1>
-        <div class="logo">
-            <img src="img/logo.jpg" alt="Logo Chevy Care">
-        </div>
     </header>
-
-    <!-- Menú desplegable (oculto por defecto) -->
-    <nav class="nav" id="navMenu">
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-
 
     <!-- Sección Hero --> 
     <section class="hero">   
