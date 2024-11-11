@@ -581,7 +581,7 @@ h6 {
     font-size: 1rem;
     color: #333;
     margin-bottom: 2rem;
-    max-width: 800px;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -662,7 +662,32 @@ h6 {
     background-image: url('../img/seccion3.png');
 }
 
+.consejo1 {
+    background-image: url('../img/consejos1.jpeg');
+}
+
+.consejo2 {
+    background-image: url('../img/consejos2.png');
+}
+
+.consejo3 {
+    background-image: url('../img/consejos3.png');
+}
+
+.consejo4 {
+    background-image: url('../img/consejos4.png');
+}
+
+.consejo5 {
+    background-image: url('../img/consejos5.png');
+}
+
+.consejo6 {
+    background-image: url('../img/consejos6.png');
+}
+
 .consejo-number {
+    font-family: 'Porter Sans Block';
     font-size: 3rem;
     font-weight: bold;
     color: #333;
