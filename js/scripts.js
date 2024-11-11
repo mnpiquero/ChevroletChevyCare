@@ -1,32 +1,47 @@
-function toggleMenu() {
-    const nav = document.querySelector('.nav');
-    nav.classList.toggle('active');
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const datepicker = document.getElementById("datepicker");
+    const serviceSelect = document.getElementById("service-select");
+    const reserveButton = document.getElementById("reserve-button");
+    const confirmationModal = document.getElementById("confirmation-modal");
+    const closeModal = document.getElementById("close-modal");
 
-document.addEventListener('DOMContentLoaded', function () {
-    // Inicializar Pikaday en el input de fecha
-    var picker = new Pikaday({
-        field: document.getElementById('datepicker'),
-        format: 'DD/MM/YYYY', // Formato de fecha (puedes ajustarlo según necesites)
-        toString: function(date, format) {
-            const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long', locale: 'es-ES' };
-            return date.toLocaleDateString('es-ES', options); // Formato en español
-        },
-        onSelect: function(date) {
-            console.log(date); // Muestra la fecha seleccionada en la consola
-        },
+    // Habilita el botón "Reservar Turno" solo si se ha seleccionado una fecha y un servicio
+    function toggleReserveButton() {
+        if (datepicker.value && serviceSelect.value) {
+            reserveButton.disabled = false;
+        } else {
+            reserveButton.disabled = true;
+        }
+    }
+
+    datepicker.addEventListener("change", toggleReserveButton);
+    serviceSelect.addEventListener("change", toggleReserveButton);
+
+    // Muestra el modal al hacer clic en "Reservar Turno"
+    reserveButton.addEventListener("click", function () {
+        confirmationModal.style.display = "flex";
+    });
+
+    // Cierra el modal y limpia los campos al hacer clic en "Cerrar"
+    closeModal.addEventListener("click", function () {
+        confirmationModal.style.display = "none";
+        datepicker.value = "";
+        serviceSelect.selectedIndex = 0;
+        reserveButton.disabled = true;
+    });
+
+    // Configuración de Pikaday para el selector de fecha en español con domingo como primer día
+    new Pikaday({
+        field: datepicker,
+        format: 'YYYY-MM-DD',
+        firstDay: 0, // El domingo como primer día de la semana
         i18n: {
-            previousMonth: 'Mes Anterior',
-            nextMonth: 'Mes Siguiente',
+            previousMonth: 'Mes anterior',
+            nextMonth: 'Mes siguiente',
             months: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
             weekdays: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
             weekdaysShort: ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb']
-        }
-    });
-
-    // Capturar el servicio seleccionado
-    const serviceSelect = document.getElementById('service-select');
-    serviceSelect.addEventListener('change', function () {
-        console.log(`Servicio seleccionado: ${this.value}`);
+        },
+        onSelect: toggleReserveButton
     });
 });
