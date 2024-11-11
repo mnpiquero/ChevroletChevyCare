@@ -5,7 +5,7 @@ document.querySelectorAll('.faq-question').forEach(question => {
 
         if (answer.style.display === 'block') {
             answer.style.display = 'none';
-            toggle.textContent = '+';
+            
         } else {
             answer.style.display = 'block';
             toggle.textContent = '-';
